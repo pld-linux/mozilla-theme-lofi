@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 Minimalistic theme based on old-style Modern theme.
 
 %description -l pl
-Minimalistyczny motyw bazuj±cy na starym motywie Modern Mozilli. 
+Minimalistyczny motyw bazuj±cy na starym motywie Modern Mozilli.
 
 %prep
 
