@@ -12,7 +12,7 @@ Source0:	http://downloads.mozdev.org/themes/themes/1_7/%{_realname}-%{fver}.jar
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://themes.mozdev.org/themes/lofi.html
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.7
+Requires:	mozilla >= 5:1.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
