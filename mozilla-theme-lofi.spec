@@ -1,8 +1,8 @@
 Summary:	Minimalistic theme based on old-style Modern theme
 Summary(pl):	Minimalistyczny motyw bazuj±cy na starym motywie Modern
 Name:		mozilla-theme-lofi
-Version:	1.7
 %define		_realname	lofi
+Version:	1.7
 %define	fver	%(echo %{version} | tr -d .)
 Release:	1
 License:	GPL
