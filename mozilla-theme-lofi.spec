@@ -7,7 +7,7 @@ Version:	1.7
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.mozdev.org/themes/themes/%{_realname}-%{fver}.jar
+Source0:	http://downloads.mozdev.org/themes/themes/1_7/%{_realname}-%{fver}.jar
 # Source0-md5:	90e64184f8ec97917ae270415ba1056a
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://themes.mozdev.org/themes/lofi.html
