@@ -1,20 +1,22 @@
 Summary:	Minimalistic theme based on old-style Modern theme
 Summary(pl):	Minimalistyczny motyw bazuj±cy na starym motywie Modern
 Name:		mozilla-theme-lofi
+Version:	1.3b
 %define		_realname	lofi
-Version:	1.0
+%define	fver	%(echo %{version} | tr -d .)
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.us-east1.mozdev.org/themes/%{_realname}.jar
-# Source0-md5:	9e24a9544e45c4eba5d18491d6733918
+Source0:	http://downloads.uk1.mozdev.org/rsync/themes/themes/%{_realname}-%{fver}.jar
+# Source0-md5:	3783ab085384041c2a744c32ed027d7a
 Source1:	%{_realname}-installed-chrome.txt
-URL:		http://themes.mozdev.org/skins/lofi.html
+URL:		http://themes.mozdev.org/themes/lofi.html
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.0-7
+Requires:	mozilla >= 1.2.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
 %define		_chromedir	%{_libdir}/mozilla/chrome
 
 %description
@@ -29,7 +31,8 @@ Minimalistyczny motyw bazuj±cy na starym motywie Modern Mozilli.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_chromedir}
 
-install %{SOURCE0} %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
+install %{SOURCE0} $RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
+install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
