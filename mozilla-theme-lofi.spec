@@ -6,8 +6,8 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.mozdev.org/themes/%{_realname}.jar
-# Source0-md5:	e36c9ac77236cd02ddef43d535ece256
+Source0:	http://downloads.us-east1.mozdev.org/themes/%{_realname}.jar
+# Source0-md5:	9e24a9544e45c4eba5d18491d6733918
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://themes.mozdev.org/skins/lofi.html
 Requires(post,postun):	textutils
