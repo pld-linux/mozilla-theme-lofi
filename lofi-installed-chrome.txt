@@ -1,0 +1,6 @@
+skin,install,url,jar:resource:/chrome/lofi.jar!/
+skin,install,url,jar:resource:/chrome/lofi.jar!/global/
+skin,install,url,jar:resource:/chrome/lofi.jar!/communicator/
+skin,install,url,jar:resource:/chrome/lofi.jar!/editor/
+skin,install,url,jar:resource:/chrome/lofi.jar!/messenger/
+skin,install,url,jar:resource:/chrome/lofi.jar!/navigator/
