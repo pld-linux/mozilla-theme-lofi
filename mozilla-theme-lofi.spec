@@ -1,22 +1,22 @@
 Summary:	Minimalistic theme based on old-style Modern theme
 Summary(pl):	Minimalistyczny motyw bazuj±cy na starym motywie Modern
 Name:		mozilla-theme-lofi
-Version:	1.3b
+Version:	1.7
 %define		_realname	lofi
 %define	fver	%(echo %{version} | tr -d .)
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.uk1.mozdev.org/rsync/themes/themes/%{_realname}-%{fver}.jar
-# Source0-md5:	3783ab085384041c2a744c32ed027d7a
+Source0:	http://downloads.mozdev.org/themes/themes/%{_realname}-%{fver}.jar
+# Source0-md5:	90e64184f8ec97917ae270415ba1056a
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://themes.mozdev.org/themes/lofi.html
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.2.1
+Requires:	mozilla >= 1.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
-%define		_chromedir	%{_libdir}/mozilla/chrome
+%define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
 Minimalistic theme based on old-style Modern theme.
