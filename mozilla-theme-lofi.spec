@@ -1,5 +1,5 @@
 Summary:	Minimalistic theme based on old-style Modern theme
-Summary(pl):	Minimalistyczny motyw bazuj±cy na starym motywie Modern
+Summary(pl.UTF-8):   Minimalistyczny motyw bazujÄ…cy na starym motywie Modern
 Name:		mozilla-theme-lofi
 %define		_realname	lofi
 Version:	1.7
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Minimalistic theme based on old-style Modern theme.
 
-%description -l pl
-Minimalistyczny motyw bazuj±cy na starym motywie Modern Mozilli.
+%description -l pl.UTF-8
+Minimalistyczny motyw bazujÄ…cy na starym motywie Modern Mozilli.
 
 %prep
 
